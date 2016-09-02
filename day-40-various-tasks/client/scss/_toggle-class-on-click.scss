@@ -1,0 +1,13 @@
+
+.toggle-class-on-click {
+  .click-me {
+    border: solid 1px #CCC;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .on {
+    background-color: #000;
+    color: #FFF;
+  }
+}

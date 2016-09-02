@@ -2,6 +2,7 @@ var React = require('react');
 var render = require('react-dom').render;
 
 var Header = require('./js/header.jsx').Header;
+var ToggleClassOnClick = require('./js/toggle-class-on-click.jsx');
 
 require("./scss/style.scss");
 
@@ -11,7 +12,10 @@ class App extends React.Component {
     return <div>
         <Header />
 
-        <p>This is a React app!</p>
+        <div className="toggle-class-on-click">
+          <ToggleClassOnClick />
+        </div>
+
       </div>;
   }
 }
