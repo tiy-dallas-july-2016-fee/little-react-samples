@@ -24,8 +24,8 @@ class BuildASimpleList extends React.Component {
 
     return (
       <ol id="the-list">
-        {this.state.groceryList.map(function(item) {
-          return <li key={item}>{item}</li>
+        {this.state.groceryList.map(function(item, i) {
+          return <li key={i}>{item}</li>
         })}
       </ol>
     );
