@@ -1,0 +1,26 @@
+@import 'reset';
+
+body {
+  background-color: #EEE;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+#app {
+  background-color: #FFF;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul {
+  margin: 20px 0 20px 40px;
+}
+
+ul li {
+  list-style-type: disc;
+  margin: 5px 0;
+}
