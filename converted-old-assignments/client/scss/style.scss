@@ -1,0 +1,27 @@
+@import 'reset';
+
+body {
+  background-color: #EEE;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: #FFF;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 700px;
+}
+
+
+@import 'toggle-class-on-click';
+@import 'build-a-simple-list';
