@@ -22,6 +22,11 @@ h2 {
   max-width: 700px;
 }
 
+.sample {
+  border-top: solid 3px #000;
+  margin-top: 50px;
+}
+
 
 @import 'toggle-class-on-click';
 @import 'build-a-simple-list';
