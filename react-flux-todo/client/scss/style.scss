@@ -1,0 +1,68 @@
+@import 'reset';
+
+
+body {
+	background-color: #EEE;
+	font-family: Helvetica, Verdana, sans-serif;
+}
+
+.container {
+	background-color: #FFF;
+	border: solid 1px #CCC;
+	margin: 20px auto;
+	max-width: 500px;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.container input {
+	border: none;
+	font-size: 1em;
+	margin-top: 10px;
+	outline: solid 1px #DDD;
+	padding: 10px 2%;
+	width: 96%;
+}
+
+.list {
+	min-height: 100px;
+}
+
+.list li {
+	background-color: #EEE;
+	border: solid 1px #CCC;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.list li.complete {
+	color: #777;
+	text-decoration: line-through;
+}
+
+.list li input {
+	margin: 0;
+}
+
+.icon {
+	border: solid 1px #AAA;
+	float: right;
+	margin-left: 10px;
+  margin-top: -2px;
+	padding: 2px;
+	width: 15px;
+}
+
+h2 {
+	color: #777;
+	text-align: center;
+}
+
+.completed {
+  color: #999;
+  text-decoration: line-through;
+}
