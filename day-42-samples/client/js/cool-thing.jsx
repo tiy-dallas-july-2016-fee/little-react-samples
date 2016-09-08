@@ -6,8 +6,6 @@ class LegoTemplate extends React.Component {
     console.log('clicked', lego);
   }
 
-
-
   render() {
 
     console.log('props', this.props);
