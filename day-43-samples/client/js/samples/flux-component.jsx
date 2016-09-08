@@ -4,25 +4,32 @@ var store = require('./store-sample.js');
 class FluxComponent extends React.Component {
 
   constructor() {
+    console.log('constructicon');
     super();
 
-    store.actions.doThing();
+    //store.actions.doThing();
 
-    this.state = store.getState();
+    this.state = store.copyState();
   }
 
   componentDidMount() {
+    console.log('componentDidMount');
     var self = this;
-    store.onChange(function(state) {
+
+    var omar = function(state) {
       self.setState(state);
-    });
+    };
+
+    store.onChange(omar);
   }
 
   _onClick() {
+    console.log('_onClick');
     store.actions.doThing()
   }
 
   render() {
+    console.log('render');
     var self = this;
 
     return (

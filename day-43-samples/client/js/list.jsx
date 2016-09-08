@@ -3,7 +3,7 @@ import React from 'react';
 class List extends React.Component {
 
   render() {
-    console.log('List props', this.props);
+    //console.log('List props', this.props);
 
     var items = [];
 

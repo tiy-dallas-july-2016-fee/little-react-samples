@@ -3,7 +3,7 @@ import React from 'react';
 class Character extends React.Component {
 
   render() {
-    console.log('Character props', this.props);
+    //console.log('Character props', this.props);
 
     return (
       <div>

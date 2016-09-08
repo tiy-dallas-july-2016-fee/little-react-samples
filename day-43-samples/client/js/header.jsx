@@ -5,7 +5,7 @@ import PropsComponent from './PropsComponent.jsx';
 class Header extends React.Component {
 
   render () {
-    console.log('rendering header!');
+    //console.log('rendering header!');
 
     return (
       <header>

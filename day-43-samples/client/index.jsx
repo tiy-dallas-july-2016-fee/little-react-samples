@@ -6,6 +6,8 @@ import PropsComponent from './js/PropsComponent.jsx';
 import List from './js/list.jsx';
 import Character from './js/character.jsx';
 import characterCreator from './js/character-creator.js';
+import FluxComponent from './js/samples/flux-component.jsx';
+import IsEven from './js/samples/is-even.jsx';
 
 //console.log('character creator', characterCreator());
 
@@ -26,9 +28,13 @@ class App extends React.Component {
         <Character dude={character1} />
         <Character dude={character2} />
 
+        <FluxComponent />
+
 
         <PropsComponent steak="awesome" bgColor="pink" />
         <PropsComponent text="third!" />
+
+        <IsEven />
 
         <List />
         <List count={5} />
