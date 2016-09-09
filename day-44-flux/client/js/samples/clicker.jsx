@@ -1,7 +1,7 @@
 import React from 'react';
 import store from './clicker-store.js';
 
-class FluxComponent extends React.Component {
+class Clicker extends React.Component {
 
   constructor() {
     super();
