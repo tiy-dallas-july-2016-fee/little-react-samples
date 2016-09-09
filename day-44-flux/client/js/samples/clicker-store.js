@@ -47,4 +47,9 @@ store.actions.increment = function() {
   changed(); //since the state just got changed, call the change function
 }
 
+store.actions.reset = function() {
+  state.count = 0;
+  changed();
+}
+
 module.exports = store;
