@@ -1,0 +1,42 @@
+@import 'reset';
+
+body {
+  background-color: #EEE;
+  font-family: Helvetica, Verdana, sans-serif;
+}
+
+#app {
+  padding: 5px;
+}
+
+.container {
+  background-color: #FFF;
+  border: solid 1px #DDD;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 1.5em 0;
+}
+
+p {
+  margin: 20px 0;
+}
+
+nav {
+  border-bottom: solid 3px #000;
+  overflow: auto;
+
+  li {
+    float: left;
+    margin: 5px 15px 5px 0;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
