@@ -47,18 +47,4 @@ store.actions.increment = function() {
   changed(); //since the state just got changed, call the change function
 }
 
-store.actions.reset = function() {
-  state.count = 0;
-  changed();
-}
-
-store.actions.doDamageToPlayer() {
-  state.player.hp -= 1;
-  // if (state.player.hp < 1) {
-  //   state.player.isDead = ture
-  // }
-  changed();
-}
-
-
 module.exports = store;
