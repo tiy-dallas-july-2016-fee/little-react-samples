@@ -2,3 +2,5 @@ node_modules
 app.bundle.js
 app.bundle.js.map
 .DS_Store
+style.css
+style.css.map
