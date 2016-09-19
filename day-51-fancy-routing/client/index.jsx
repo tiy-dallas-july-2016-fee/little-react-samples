@@ -15,7 +15,7 @@ class App extends React.Component {
       <div>
         <p>app</p>
         <Link to={'/master'}>Master</Link>
-        <Link to={'/detail'}>Detail</Link>
+        <Link to={'/detail/7'}>Detail</Link>
         <Link to={'/whateverIwantittobe'}>Whatever bro</Link>
 
       {this.props.children}
@@ -28,7 +28,7 @@ render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <Route path="master" component={Master}/>
-      <Route path="detail" component={Detail} />
+      <Route path="detail/:index" component={Detail} />
       <Route path="whateverIwantittobe" component={Third} />
     </Route>
   </Router>

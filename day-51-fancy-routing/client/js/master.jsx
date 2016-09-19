@@ -1,5 +1,6 @@
 import React from 'react';
 import store from './the-force-store.js';
+import { Link } from 'react-router'
 
 class Master extends React.Component {
 
@@ -22,7 +23,7 @@ class Master extends React.Component {
         <h1>List of Characters</h1>
 
         {this.state.characters.map((c, i) => {
-          return <li key={i}>{c.name}</li>
+          return <li key={i}>{c.name} <Link to={'/detail/' + i}>Detail</Link></li>
         })}
 
       </div>
