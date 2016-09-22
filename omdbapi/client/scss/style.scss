@@ -1,0 +1,25 @@
+@import 'reset';
+
+#app {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 1.5em 0;
+}
+
+
+.show-more {
+  border: solid 1px #000;
+}
+
+.movie-list li {
+  border: solid 1px #999;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.movie-list img {
+  max-width: 70px;
+}
