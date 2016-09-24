@@ -2,16 +2,32 @@ import React from 'react';
 
 class Input extends React.Component {
 
+  constructor() {
+    super();
+
+    this.state = {
+      showInput: false
+    }
+  }
+
   _onClick() {
-    //`this._input` has the actual browser DOM element in it.
-    var val = this._input.value;
-    console.log('the value', val);
+
+    this.setState({
+      showInput: true
+    })
+
   }
 
   render() {
+
+    var input;
+    if (this.state.showInput) {
+      input = <input type="text" autoFocus ref={input => this._input = input} />;
+    }
+
     return (
       <div>
-        <input type="text" ref={input => this._input = input} />
+        {input}
         <button onClick={() => this._onClick()}>get text of input</button>
       </div>
     )
