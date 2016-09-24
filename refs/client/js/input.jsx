@@ -11,10 +11,29 @@ class Input extends React.Component {
   }
 
   _onClick() {
+    //`this._input` has the actual browser DOM element in it.
+    //var val = this._input.value;
+
+    // setInterval(() => {
+    //   this.setState({
+    //     showInput: true
+    //   })
+    // }, 1000);
+
+
+
 
     this.setState({
       showInput: true
     })
+
+    setInterval(() => {
+
+    }, 300);
+
+    //console.log('the value', val);
+
+
 
   }
 
@@ -22,7 +41,7 @@ class Input extends React.Component {
 
     var input;
     if (this.state.showInput) {
-      input = <input type="text" autoFocus ref={input => this._input = input} />;
+      input = <input type="text" autoFocus className="" ref={input => this._input = input} />;
     }
 
     return (
