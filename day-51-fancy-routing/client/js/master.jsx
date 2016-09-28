@@ -8,18 +8,16 @@ class Master extends React.Component {
     console.log('Master constructor');
     super();
 
-    store.actions.load();
-
     this.state = store.copyState();
+  }
+
+  componentWillMount() {
+    store.actions.load();
 
     this.listeningFunc = (state) => {
       this.setState(state);
     }
     store.addListener(this.listeningFunc);
-  }
-
-  componentDidMount() {
-    console.log('mounting master');
   }
 
   componentWillUnmount() {
