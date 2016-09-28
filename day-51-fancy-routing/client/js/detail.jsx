@@ -8,8 +8,24 @@ class Detail extends React.Component {
     console.log('the params', this.props.params);
     var id = Number(this.props.params.index);
     var stateObj = store.copyState();
-    var dude = stateObj.characters[id];
-    this.setState(dude);
+
+    if (stateObj.characters.length > 0) {
+      var dude = stateObj.characters[id];
+      this.setState(dude);
+    }
+    else {
+      store.actions.load();
+
+      this.listeningFunc = (state) => {
+        var dude = state.characters[id];
+        this.setState(dude);
+      }
+      store.addListener(this.listeningFunc);
+    }
+  }
+
+  componentWillUnmount() {
+    store.removeListener(this.listeningFunc);
   }
 
   render() {

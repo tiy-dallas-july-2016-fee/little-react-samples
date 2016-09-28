@@ -46,8 +46,14 @@ store.actions.load = function() {
   //load the state
   console.log('load action fired');
 
+  //I have data already! Don't make ajax call.
+  if (state.characters.length > 0) {
+    changed();
+    return;
+  }
+
   $.ajax({
-    url: 'http://swapi.co/api/people'
+    url: 'http://swapi.co/api/people/'
   }).done(function(returnedData) {
     console.log('data', returnedData);
     state.characters = returnedData.results;
