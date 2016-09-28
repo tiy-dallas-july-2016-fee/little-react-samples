@@ -9,18 +9,15 @@ class Detail extends React.Component {
     var id = Number(this.props.params.index);
     var stateObj = store.copyState();
     var dude = stateObj.characters[id];
-    console.log('teh dude', dude);
     this.setState(dude);
   }
 
-
   render() {
-    console.log('detail state is what?', this.state);
+    console.log('render state:', this.state);
 
     if (this.state === null) {
       return (<div>loading character...</div>)
     }
-
 
     return (
       <div>

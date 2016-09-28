@@ -12,6 +12,13 @@ var store = {
 //What a component will call so it can pass a callback/listener for change events
 store.addListener = function(listener) {
   store.listeners.push(listener);
+  console.log('listener length (add)', store.listeners.length);
+}
+
+store.removeListener = function(listener) {
+  var index = store.listeners.indexOf(listener);
+  store.listeners.splice(index, 1);
+  console.log('listener length (remove)', store.listeners.length);
 }
 
 //Makes a copy of the state. This is to protect the state that is managed by the store.

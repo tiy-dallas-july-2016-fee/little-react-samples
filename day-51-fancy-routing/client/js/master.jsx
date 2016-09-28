@@ -5,17 +5,27 @@ import { Link } from 'react-router'
 class Master extends React.Component {
 
   constructor() {
+    console.log('Master constructor');
     super();
 
     store.actions.load();
 
     this.state = store.copyState();
 
-    store.addListener(state => {
+    this.listeningFunc = (state) => {
       this.setState(state);
-    });
+    }
+    store.addListener(this.listeningFunc);
   }
 
+  componentDidMount() {
+    console.log('mounting master');
+  }
+
+  componentWillUnmount() {
+    console.log('component will unmount');
+    store.removeListener(this.listeningFunc);
+  }
 
   render() {
     return (
